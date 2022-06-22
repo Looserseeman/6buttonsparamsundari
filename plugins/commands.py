@@ -39,15 +39,31 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
+
             InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+
             ],[
-            InlineKeyboardButton('🎯 𝗠𝗼𝘃𝗶𝗲𝘀 🎯', url='https://t.me/Mkv_rockers'),
-            InlineKeyboardButton('🎟️ 𝗦𝗲𝗿𝗶𝗲𝘀 🎟️', url='https://t.me/mkvserieshub')
-            ],[      
-            InlineKeyboardButton('ℹ️ 𝗛𝗲𝗹𝗽 ℹ️', callback_data='help'),
+
+            InlineKeyboardButton('🎯 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🎯', url='https://t.me/Mkv_blasters'),
+
+            InlineKeyboardButton('🎟️ 𝗦𝗲𝗿𝗶𝗲𝘀 🎟️', url='https://t.me/mkv_serieshub')
+
+            ],[
+
+            InlineKeyboardButton('🎥 𝗠𝗼𝘃𝗶𝗲𝘀 🎥',url='https:t.me/mkv_movieshub'),
+
+            InlineKeyboardButton('📀 𝗣𝗥𝗘 𝗗𝗩𝗗 📀',url='https:t.me/mkv_predvdhub')
+
+            ],[
+
+            InlineKeyboardButton('ℹ️ 𝗛𝗲𝗹𝗽 ℹ️', callback_data='help'),                     
+
             InlineKeyboardButton('🍻 𝗔𝗯𝗼𝘂𝘁 🍻', callback_data='about')
+
             ],[
-            InlineKeyboardButton('🍿 𝗠𝗼𝘃𝗶𝗲 𝗖𝗹𝘂𝗯 🍿', url='https://t.me/mkvrequestroom')
+
+            InlineKeyboardButton('🍿 𝗠𝗼𝘃𝗶𝗲 𝗖𝗹𝘂𝗯 🍿', url='https://t.me/mkv_requestroom')
+
         ]]         
         reply_markup = InlineKeyboardMarkup(buttons)        
         await message.reply_photo(
@@ -82,15 +98,31 @@ async def start(client, message):
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
+
             InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗠𝗲 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+
             ],[
-            InlineKeyboardButton('🎯 𝗠𝗼𝘃𝗶𝗲𝘀 🎯', url='https://t.me/Mkv_rockers'),
-            InlineKeyboardButton('🎟️ 𝗦𝗲𝗿𝗶𝗲𝘀 🎟️', url='https://t.me/mkvserieshub')
-            ],[      
-            InlineKeyboardButton('ℹ️ 𝗛𝗲𝗹𝗽 ℹ️', callback_data='help'),
+
+            InlineKeyboardButton('🎯 𝗠𝗮𝗶𝗻 𝗖𝗵𝗮𝗻𝗻𝗲𝗹 🎯', url='https://t.me/Mkv_blasters'),
+
+            InlineKeyboardButton('🎟️ 𝗦𝗲𝗿𝗶𝗲𝘀 🎟️', url='https://t.me/mkv_serieshub')
+
+            ],[
+
+            InlineKeyboardButton('🎥 𝗠𝗼𝘃𝗶𝗲𝘀 🎥',url='https:t.me/mkv_movieshub'),
+
+            InlineKeyboardButton('📀 𝗣𝗥𝗘 𝗗𝗩𝗗 📀',url='https:t.me/mkv_predvdhub')
+
+            ],[
+
+            InlineKeyboardButton('ℹ️ 𝗛𝗲𝗹𝗽 ℹ️', callback_data='help'),                     
+
             InlineKeyboardButton('🍻 𝗔𝗯𝗼𝘂𝘁 🍻', callback_data='about')
+
             ],[
-            InlineKeyboardButton('🍿 𝗠𝗼𝘃𝗶𝗲 𝗖𝗹𝘂𝗯 🍿', url='https://t.me/mkvrequestroom')
+
+            InlineKeyboardButton('🍿 𝗠𝗼𝘃𝗶𝗲 𝗖𝗹𝘂𝗯 🍿', url='https://t.me/mkv_requestroom')
+
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
